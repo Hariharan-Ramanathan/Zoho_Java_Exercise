@@ -1,3 +1,6 @@
+// 2. Write a program to count the numbers of characters entered through stdin. The program exits upon entering Ctrl+Z.
+
+
 package q2;
 
 import java.util.Scanner;

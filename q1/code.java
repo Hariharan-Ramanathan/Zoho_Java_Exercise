@@ -1,3 +1,5 @@
+//1 .Get an input from the user using DataInputStream and print the same.
+
 package q1;
 
 import java.io.*;
