@@ -5,7 +5,7 @@ package q2;
 
 import java.util.Scanner;
 
-public class code {
+public class Main {
 
 	public static void main(String[] args) {
 		

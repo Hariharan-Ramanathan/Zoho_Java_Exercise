@@ -3,7 +3,7 @@
 
 package q12;
 
-public class code {
+public class Main {
     public static void main(String[] args) {
         prime_number p = new prime_number();
 

@@ -1,7 +1,11 @@
 package q8;
 
-public class mykey {
-    public mykey(String str){
+public class Mykey {
+    public Mykey(){
+
+    }
+    
+    public Mykey(String str){
         code.public_key = str.getBytes();
     }
 }

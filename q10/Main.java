@@ -6,52 +6,44 @@
 //	3.List
 //		Enter your Choice:
 
+// seperate class and give good var name for case
+
 package q10;
 
 import java.util.Scanner;
 import java.util.Vector;
 
-public class code {
-
+public class Main {
+	static final int ENQUEUE = 1;
+	static final int DEQUEUE = 2;
+	static final int LIST = 3;
+	static final int QUIT = 4;
 	public static void main(String[] args) {
 		Vector<Integer> queue = new Vector<>();
 		Scanner s = new Scanner(System.in);
 		int n = 0;
 		while(true) {
-			System.out.println();
-			System.out.println("1.Enqueue\n2.Dequeue\n3.List\n4.quit");
-			System.out.println();
+			System.out.println("\n1.Enqueue\n2.Dequeue\n3.List\n4.quit\n");
 			n = s.nextInt();
+
+			q_operations q = new q_operations();
 			
-			if(n == 4) {
+			if(n == QUIT) {
 				System.out.println("Program terminated");
 				return;
 				}
 			
 			switch(n) {
-				case 1:{
-					System.out.println("Enter the value");
-					int val = s.nextInt();
-					queue.add(val);
-					System.out.println(val+" Enqueued");
-					System.out.println();
+				case ENQUEUE:{
+					q.enqueue(queue);
 					break;
 				}
-				case 2:{
-					if(queue.isEmpty())
-						System.out.println("Queue is empty");
-					else {
-						int val = queue.get(0);
-						queue.remove(0);
-						System.out.println(val+" Dequeued");
-						System.out.println();
-						break;
-					}
+				case DEQUEUE:{
+					int val = q.dequeue(queue);
+					break;
 				}
-				case 3:{
-					for(int i=0;i<queue.size();i++)
-						System.out.print(queue.get(i) +" ");
-						System.out.println();
+				case LIST:{
+					q.list(queue);
 					break;
 				}
 				
@@ -59,6 +51,7 @@ public class code {
 					System.out.println("Enter values given in the list");
 			
 			}
+
 			
 		}
 		

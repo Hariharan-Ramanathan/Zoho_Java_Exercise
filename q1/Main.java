@@ -3,12 +3,11 @@
 package q1;
 
 import java.io.*;
-import java.util.Scanner;
 
-public class code {
+public class Main {
 
 	public static void main(String[] args) throws Exception {
-		Scanner sc = new Scanner(System.in);
+		/*Scanner sc = new Scanner(System.in);
 		System.out.println("Enter text\n");
 		String str = sc.nextLine();
 		
@@ -34,9 +33,22 @@ public class code {
 			System.out.print(s);
 		}
 		System.out.println();
-		din.close();
+		din.close();s
 		fin.close();
 		
 	}
+	*/
+	
+	DataInputStream dis = new DataInputStream(System.in);
+	DataOutputStream dos = new DataOutputStream(System.out);
 
+	System.out.println("Enter anything");
+	int n = dis.readInt();
+	System.out.print("You entered ");
+	dos.writeInt(n);
+
+	dis.close();
+	dos.close();
+
+}
 }

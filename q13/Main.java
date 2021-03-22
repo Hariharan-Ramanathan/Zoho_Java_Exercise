@@ -4,7 +4,7 @@ package q13;
 
 import java.util.Random;
 
-public class code {
+public class Main {
     public static boolean isPrime(int val){
             int count =0;
             for(int j=1;j<=Math.sqrt(val);j++){
