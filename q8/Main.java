@@ -21,7 +21,7 @@ public class Main {
 
         aes_algo aes = new aes_algo();
 
-        String enc = aes.encrypt("Saravana");
+        String enc = aes.encrypt("Hariharan");
         System.out.println("Encrypted = "+enc);
 
         String dec = aes.decrypt(enc);

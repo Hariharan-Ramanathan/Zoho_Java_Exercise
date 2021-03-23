@@ -4,8 +4,6 @@
 package q3;
 
 public class Main {
-	public static int small = Integer.MAX_VALUE;
-	public static int large = 0;
 	public static void main(String[] args) {
 		
 		int arr[][][] = new int[4][5][8];
@@ -16,8 +14,8 @@ public class Main {
 
 		funs.print(arr, 4, 5, 8);
 		
-		System.out.println("Small num = "+small);
-		System.out.println("Large num = "+large);
+		System.out.println("Small num = "+funs.large_val(arr, 4, 5, 8));
+		System.out.println("Large num = "+funs.small_val(arr, 4, 5, 8));
 		
 	}
 

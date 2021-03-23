@@ -6,6 +6,6 @@ public class Mykey {
     }
     
     public Mykey(String str){
-        code.public_key = str.getBytes();
+        Main.public_key = str.getBytes();
     }
 }
