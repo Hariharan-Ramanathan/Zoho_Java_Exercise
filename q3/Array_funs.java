@@ -10,10 +10,6 @@ public class Array_funs {
 			for(int j=0;j<c;j++) {
 				for(int k=0;k<h;k++) {
 					arr[i][j][k] = rand.nextInt(100);
-						if(arr[i][j][k] < Main.small)
-							Main.small = arr[i][j][k];
-						if(arr[i][j][k] > Main.large)
-							Main.large = arr[i][j][k];
 				}
 			}
     }
